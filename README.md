@@ -1,4 +1,4 @@
-# CityCab App Tyoe Uber
+# CityCab App Type Uber
 
 A new iOS project.
 
