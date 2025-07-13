@@ -6,6 +6,7 @@
 //
 import Foundation
 
+//Paso 2.2
 enum ASImageSource: Hashable {
     case asset(asset: String)
     case systemName(asset: String)

@@ -6,6 +6,7 @@
 //
 import SwiftUI
 
+//Paso 1.1, cambiamos la hextension del color hexadecimal ya que swift no permite hexa
 extension Color {
     /// Initialize `Color` from a hexadecimal string (supports `#RRGGBB` and `#RRGGBBAA` formats)
     init(hex: String) {

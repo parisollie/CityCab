@@ -13,7 +13,7 @@ private enum ASServiceItemViewConstants {
         static let imageSizeBig: CGFloat = 80
     }
 }
-
+//Paso 5.3
 struct ASServiceItemView: View {
     let model: ASServiceItemModel
 

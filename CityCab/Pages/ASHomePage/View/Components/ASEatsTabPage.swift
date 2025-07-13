@@ -63,7 +63,7 @@ private enum ASEatsTabPageConstants {
     ]
 }
 
-/// The main page of the Eats tab.
+///Paso 3.2 The main page of the Eats tab.
 struct ASEatsTabPage: View {
     @State private var textFieldTextResult: String = ""
     @State private var isTextFieldFocused: Bool = false

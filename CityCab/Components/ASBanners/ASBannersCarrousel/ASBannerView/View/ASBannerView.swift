@@ -34,6 +34,7 @@ import SwiftUI
  * )
  * ```
  */
+//Paso 6.2
 struct ASBannerView: View {
     /// Data model containing all banner configurations
     let model: ASBannerModel

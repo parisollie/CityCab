@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// A reusable header view with a main title and an optional action text.
+///Paso 5.5  A reusable header view with a main title and an optional action text.
 struct ASDoubleHeaderView: View {
     private let infoText: String
     private let actionText: String?

@@ -14,13 +14,14 @@ private enum ASHomeTabPageConstants {
         static let text3 = "See All"
     }
     
+    //paso 4.6
     static let rideHistoryMock: [ASRideHistoryModel] = [
         ASRideHistoryModel(id: "1",
-                           address: "Plaza Catalunya",
-                           city: "Barcelona"),
+                           address: "Santa Fé",
+                           city: "CDMX"),
         ASRideHistoryModel(id: "2",
-                           address: "Sants station",
-                           city: "Barcelona")
+                           address: "Parque La Mexicana",
+                           city: "CDMX")
     ]
     
     static let services: [ASServiceItemModel] = [
@@ -38,7 +39,7 @@ private enum ASHomeTabPageConstants {
                            title: "Reserve",
                            image: "calendar_icon")
     ]
-    
+    //Paso 5.6
     static let banners: [ASBannerModel] = [
         ASBannerModel(title: "40% off your next 3 restaurant orders.",
                       titleColor: .white,
@@ -60,11 +61,16 @@ private enum ASHomeTabPageConstants {
 struct ASHomeTabPage: View {
 
     var body: some View {
+        //V-84,paso 3.4
         ScrollView(showsIndicators: false) {
             VStack(spacing: ASSpacing.small) {
+                //El searchbar
                 ASWhereToTextView(text: ASHomeTabPageConstants.Localizables.text1)
+                //Paso 4.0
                 ASRideHistoryListView(rideHistory: ASHomeTabPageConstants.rideHistoryMock)
+                //Paso 5.0
                 ASSuggestionsView(items: ASHomeTabPageConstants.services)
+                //Paso 6.0
                 ASBannersCarrouselListView(bannerList: ASHomeTabPageConstants.banners)
                     .padding(.top)
             }
@@ -93,6 +99,7 @@ private struct ASWhereToTextView: View {
     }
 }
 
+//paso 5.1
 private struct ASSuggestionsView: View {
     let items: [ASServiceItemModel]
     

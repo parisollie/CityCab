@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Paso 2.1
 /// Model representing a tab item with an identifier, title, image, and selection state.
 struct ASTabModel {
     let id: String

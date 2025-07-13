@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// A list view displaying a collection of ride history entries.
+///Paso 4.1 A list view displaying a collection of ride history entries.
 struct ASRideHistoryListView: View {
     let rideHistory: [ASRideHistoryModel]
     
@@ -26,8 +26,8 @@ struct ASRideHistoryListView: View {
 #Preview {
     ASRideHistoryListView(
         rideHistory: [
-            ASRideHistoryModel(id: "1", address: "Plaza Catalunya", city: "Barcelona"),
-            ASRideHistoryModel(id: "2", address: "Sants Station", city: "Barcelona")
+            ASRideHistoryModel(id: "1", address: "Santa Fe", city: "CDMX"),
+            ASRideHistoryModel(id: "2", address: "Parque la Mexicana", city: "CDMX")
         ]
     )
 }

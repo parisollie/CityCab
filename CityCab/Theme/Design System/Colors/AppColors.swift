@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//V-81, paso 1.0
 // MARK: - Geek Blue
 extension Color {
     static let primary = Color(hex: "#266EF1")

@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Paso 1.4
 enum ASSize {
     /// 0
     static let zero: CGFloat = 0

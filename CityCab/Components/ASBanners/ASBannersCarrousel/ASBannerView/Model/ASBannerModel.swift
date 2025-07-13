@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Paso 6.3
 enum ASCtaStyle {
     case arrow(labelColor: Color)
     case button(labelColor: Color, buttonColor: Color)

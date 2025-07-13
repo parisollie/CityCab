@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Paso 6.1
 struct ASBannersCarrouselListView: View {
     let bannerList: [ASBannerModel]
     

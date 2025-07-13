@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+// V-82,Paso 2.0
 /// Delegate protocol for `ASDoubleTabSelectionView` to handle tab selection events.
 protocol ASDoubleTabSelectionViewDelegate {
+    //paso 2.8
     func didSelectTab1(_ tab1Model: ASTabModel)
     func didSelectTab2(_ tab2Model: ASTabModel)
 }
@@ -20,7 +22,9 @@ struct ASDoubleTabSelectionView: View {
     private let delegate: ASDoubleTabSelectionViewDelegate?
     
     var body: some View {
+        //Paso 2.3
         HStack {
+            //Ponemos una pestaña a lado de la otra 
             ASTabView(model: modelTab1)
                 .onTapGesture { selectTab1() }
             ASTabView(model: modelTab2)
@@ -51,6 +55,7 @@ struct ASDoubleTabSelectionView: View {
     ///   - modelTab1: The first tab model.
     ///   - modelTab2: The second tab model.
     ///   - delegate: An optional delegate to handle tab selection.
+    //Paso 2.7
     init(
         modelTab1: ASTabModel,
         modelTab2: ASTabModel,

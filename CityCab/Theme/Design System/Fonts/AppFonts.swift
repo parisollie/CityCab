@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Paso 1.2
 extension Font {
     static let h1Bold: Font = .system(size: ASFontSize.heading1.rawValue, weight: .bold)
     static let h1SemiBold: Font = .system(size: ASFontSize.heading1.rawValue, weight: .semibold)

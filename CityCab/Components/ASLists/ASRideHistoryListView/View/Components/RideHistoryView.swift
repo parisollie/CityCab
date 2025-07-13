@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// A view displaying a single ride history entry with an icon, address, and city.
+///Paso 4.3, A view displaying a single ride history entry with an icon, address, and city.
 struct ASRideHistoryView: View {
     let ride: ASRideHistoryModel
     
@@ -39,7 +39,7 @@ struct ASRideHistoryView: View {
             Text(ride.city)
                 .font(.largeRegular)
                 .foregroundColor(.grey500)
-            
+            //Paso 4.5
             ASDividerView(color: Color.grey100)
         }
     }
@@ -48,6 +48,6 @@ struct ASRideHistoryView: View {
 // MARK: - Preview
 #Preview {
     ASRideHistoryView(
-        ride: ASRideHistoryModel(id: "1", address: "Plaza Catalunya", city: "Barcelona")
+        ride: ASRideHistoryModel(id: "1", address: "Santa Fe", city: "CDMX")
     )
 }

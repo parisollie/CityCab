@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Paso 2.5
 struct ASAsyncImageView: View {
     @State private var image: UIImage?
     

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Paso 2.4
 /// Constants used within `ASTabView`.
 private enum ASTabViewConstants {
     enum Sizes {
@@ -32,6 +33,7 @@ struct ASTabView: View {
     private var tabContent: some View {
         HStack {
             if let source = model.image {
+                //Paso 2.6, llama a AAsync
                 ASAsyncImageView(source: source)
                     .frame(width: ASTabViewConstants.Sizes.imageSize, height: ASTabViewConstants.Sizes.imageSize)
             }

@@ -6,6 +6,7 @@
 //
 import SwiftUI
 
+//paso 4.4
 /// Defines the possible orientations for `ASDividerView`.
 enum ASDividerOrientation {
     case horizontal
