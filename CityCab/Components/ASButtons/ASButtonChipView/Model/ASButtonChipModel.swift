@@ -6,6 +6,8 @@
 //
 import SwiftUI
 
+
+//Paso 6.6
 enum IconSourcePosition: Hashable {
     case left(systemName: String), right(systemName: String)
     

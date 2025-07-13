@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-/// A horizontal carousel component that displays multiple store cards
+///Paso 11.2, A horizontal carousel component that displays multiple store cards
 /// in a scrollable horizontal layout
 struct ASStoreCardCarrouselView: View {
     // MARK: - Properties

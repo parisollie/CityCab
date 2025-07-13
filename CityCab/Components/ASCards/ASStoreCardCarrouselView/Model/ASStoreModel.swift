@@ -6,7 +6,7 @@
 //
 import Foundation
 
-/// Model representing a store with its details and metadata
+/// Paso 11.3 Model representing a store with its details and metadata
 ///
 /// This model conforms to Identifiable for unique identification in lists
 /// and Hashable for use in collections requiring value equality

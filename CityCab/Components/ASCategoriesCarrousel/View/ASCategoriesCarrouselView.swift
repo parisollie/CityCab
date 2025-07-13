@@ -8,7 +8,7 @@
 import SwiftUI
 import Observation
 
-/// A horizontal scrolling carousel displaying a list of categories.
+/// Paso 9.2 A horizontal scrolling carousel displaying a list of categories.
 struct ASCategoriesCarouselView: View {
     let categories: [ASCategoryModel]
     
@@ -16,6 +16,7 @@ struct ASCategoriesCarouselView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: ASSpacing.small) {
                 ForEach(categories, id: \.self) { category in
+                    //Paso 9.5
                     ASCategoryView(category: category)
                 }
             }

@@ -8,7 +8,7 @@
 import SwiftUI
 import Observation
 
-/// Constants used within `ASEatsTabPage`.
+///Paso 7.3 Constants used within `ASEatsTabPage`.
 private enum ASEatsTabPageConstants {
     enum Localizables {
         static let text1 = "Delivery"
@@ -21,6 +21,7 @@ private enum ASEatsTabPageConstants {
         static let cartSystemName = "cart"
         static let chevronSystemName = "chevron.down"
     }
+    //Paso 9.6
     static let categories: [ASCategoryModel] = [
         ASCategoryModel(id: 1, source: .asset(asset: "grocery"), title: "Grocery"),
         ASCategoryModel(id: 2, source: .asset(asset: "PizzaSlice"), title: "Pizza"),
@@ -34,7 +35,7 @@ private enum ASEatsTabPageConstants {
         ASButtonChipModel(id: "2", title: "Delivery fee", iconSource: .right(systemName: "chevron.down")),
         ASButtonChipModel(id: "3", title: "Under 30 min", iconSource: .right(systemName: "chevron.down"))
     ]
-    
+    //Paso 11.5
     static let cardModels: [ASStoreModel] = [
         ASStoreModel(
             id: "sprouts-123",
@@ -63,7 +64,7 @@ private enum ASEatsTabPageConstants {
     ]
 }
 
-///Paso 3.2 The main page of the Eats tab.
+///V-88,Paso 7.0  The main page of the Eats tab.
 struct ASEatsTabPage: View {
     @State private var textFieldTextResult: String = ""
     @State private var isTextFieldFocused: Bool = false
@@ -71,10 +72,15 @@ struct ASEatsTabPage: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: ASSpacing.large) {
+                //Paso 7.1
                 DeliverNowHeaderView()
+                //Paso 8.0
                 searchBar
+                //Paso 9.0
                 categoriesCarousel
+                //Paso 10.0
                 chipsCarousel
+                //V-92,paso 11.0
                 featuredHeader
                 storeCarousel
                 divider
@@ -82,7 +88,7 @@ struct ASEatsTabPage: View {
         }
     }
     
-    /// Search bar section.
+    ///Paso 8.1 Search bar section.
     private var searchBar: some View {
         ASSearchBarView(
             placeholder: ASEatsTabPageConstants.Localizables.text4,
@@ -91,17 +97,17 @@ struct ASEatsTabPage: View {
         )
     }
     
-    /// Categories carousel.
+    ///Paso 9.1  Categories carousel.
     private var categoriesCarousel: some View {
         ASCategoriesCarouselView(categories: ASEatsTabPageConstants.categories)
     }
     
-    /// Filters carousel.
+    /// Paso 10.1,Filters carousel.
     private var chipsCarousel: some View {
         ASChipsCarouselView(models: ASEatsTabPageConstants.chipModels)
     }
     
-    /// Featured section header.
+    /// Paso 11.1 Featured section header.
     private var featuredHeader: some View {
         ASDoubleHeaderView(infoText: ASEatsTabPageConstants.Localizables.text5)
     }
@@ -118,6 +124,7 @@ struct ASEatsTabPage: View {
 }
 
 // MARK: - DeliverNowHeaderView
+//Paso 7.2
 private struct DeliverNowHeaderView: View {
 
     var body: some View {
@@ -135,6 +142,7 @@ private struct DeliverNowHeaderView: View {
 }
 
 // MARK: - DeliverNowView
+//Paso 6.4
 private struct DeliverNowView: View {
  
     var body: some View {
@@ -156,6 +164,7 @@ private struct DeliverNowView: View {
 }
 
 // MARK: - CartBadgeView
+//Paso 7.5
 private struct CartBadgeView: View {
     
     var body: some View {

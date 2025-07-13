@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Constants used within `ASCategoryView`.
+///Paso 9.3 Constants used within `ASCategoryView`.
 private enum ASCategoryViewConstants {
     enum Sizes {
         static let imageSize: CGFloat = 54

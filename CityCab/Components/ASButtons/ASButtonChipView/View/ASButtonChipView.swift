@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Protocol defining the delegate methods for button chip interactions
+///Paso 7.4  Protocol defining the delegate methods for button chip interactions
 protocol ASButtonChipDelegate {
     /// Called when a button chip is tapped
     /// - Parameter model: The model associated with the tapped button chip

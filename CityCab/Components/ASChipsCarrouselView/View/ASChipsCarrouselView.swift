@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Delegate protocol for `ASChipsCarrouselView` to handle chip selection.
+///Paso 10.2  Delegate protocol for `ASChipsCarrouselView` to handle chip selection.
 protocol ASChipsCarouselViewDelegate {
     func tagSelected(with model: ASButtonChipModel, and index: Int)
 }

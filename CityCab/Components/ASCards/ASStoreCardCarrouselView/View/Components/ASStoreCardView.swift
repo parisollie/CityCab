@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Constants used within ASStoreCardView.
+/// Paso 11.4 Constants used within ASStoreCardView.
 private enum ASStoreCardConstants {
     enum Sizes {
         static let imageHeight: CGFloat = 200

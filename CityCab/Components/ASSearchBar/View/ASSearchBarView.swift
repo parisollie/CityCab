@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Delegate protocol for `ASSearchBarView` to handle search-related events.
+///Paso 8.2  Delegate protocol for `ASSearchBarView` to handle search-related events.
 protocol ASSearchBarDelegate {
     func closeIconTapped(_ text: String)
     func userWriting(_ text: String)
